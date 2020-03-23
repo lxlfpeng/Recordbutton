@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+// JitPack Maven
+apply plugin: 'com.github.dcendents.android-maven'
+// Your Group
+group='com.github.lxlfpeng'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+}
+////添加
+//publish {
+//    userOrg = 'lxlfpeng'//bintray.com用户名
+//    repoName = 'RecordingButton'   // bintray上仓库的名字
+//    groupId = 'com.lagua'//jcenter上的路径
+//    artifactId = 'RecordingButton'//项目名称
+//    publishVersion = '1.0.0'//版本号
+//    desc = 'Make flow layouts simpler'// 描述
+//    website = 'https://github.com/lxlfpeng/RecordingButton.git'//一般填github 项目地址,一定是要有效的地址
+//}

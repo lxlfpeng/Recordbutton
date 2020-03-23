@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--录制按钮-->
+    <declare-styleable name="RecordingButton">
+        <attr name="outerBackgroundColor" format="color" />
+        <attr name="innerBackgroundColor" format="color" />
+        <attr name="outerProgressColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="splitColor" format="color" />
+        <attr name="deleteColor" format="color" />
+        <attr name="splitWidth" format="dimension" />
+    </declare-styleable>
+</resources>
