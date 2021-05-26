@@ -24,7 +24,7 @@ import java.util.List;
  * Author: palmer
  * time: 2020/3/10
  * email:lxlfpeng@163.com
- * desc:
+ * desc: 视频录制按钮
  */
 public class RecordingButton extends View {
     // 按钮做缩放动画
